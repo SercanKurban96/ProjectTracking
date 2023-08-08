@@ -1,0 +1,161 @@
+﻿@model ProjectTracking.Models.Employee.EmployeeInformation
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>EmployeeInformation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeePassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeePassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeAuthority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeAuthority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeNameSurname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeNameSurname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeIdentificationNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeIdentificationNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeDepartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeDepartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeTask)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeTask)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeePositionDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeePositionDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeePhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeePhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeMaritalStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeMaritalStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProximityInformation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProximityInformation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProximityInformationTRNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProximityInformationTRNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProximityInformationNameSurname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProximityInformationNameSurname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProximityInformationPhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProximityInformationPhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfRecruitment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfRecruitment)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
